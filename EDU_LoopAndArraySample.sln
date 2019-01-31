@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateKukuList", "CreateKukuList\CreateKukuList.csproj", "{0FDAF95A-AC4E-4928-8780-96094C13A318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddNumbers", "10NumberAdd\AddNumbers.csproj", "{535905E6-480E-4512-A550-CE2A215DA1A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FDAF95A-AC4E-4928-8780-96094C13A318}.Debug|x86.ActiveCfg = Debug|x86
+		{0FDAF95A-AC4E-4928-8780-96094C13A318}.Debug|x86.Build.0 = Debug|x86
+		{0FDAF95A-AC4E-4928-8780-96094C13A318}.Release|x86.ActiveCfg = Release|x86
+		{0FDAF95A-AC4E-4928-8780-96094C13A318}.Release|x86.Build.0 = Release|x86
+		{535905E6-480E-4512-A550-CE2A215DA1A3}.Debug|x86.ActiveCfg = Debug|x86
+		{535905E6-480E-4512-A550-CE2A215DA1A3}.Debug|x86.Build.0 = Debug|x86
+		{535905E6-480E-4512-A550-CE2A215DA1A3}.Release|x86.ActiveCfg = Release|x86
+		{535905E6-480E-4512-A550-CE2A215DA1A3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C68C505-A41E-4027-8CE9-3AB906C8B93B}
+	EndGlobalSection
+EndGlobal
