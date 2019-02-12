@@ -19,8 +19,8 @@ namespace CS_LoopAndArraySample
         /// <summary>
         /// 九九作成ボタン押下処理。
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">イベント呼び出し元オブジェクト</param>
+        /// <param name="e">e</param>
         private void ButtonKuku_Click(object sender, EventArgs e)
         {
             // 二次元整数配列に、GetKukuMatrixの処理結果(9x9の二次元整数配列)を代入する

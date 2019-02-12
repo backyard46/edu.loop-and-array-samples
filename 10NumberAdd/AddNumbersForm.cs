@@ -10,12 +10,11 @@ namespace _10NumberAdd
             InitializeComponent();
         }
 
-
         /// <summary>
         /// 足し算ボタン押下時処理。
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">イベント呼び出し元オブジェクト</param>
+        /// <param name="e">e</param>
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
             // 異常値を入れた場合もエラーにならないようにしていますが、
@@ -27,7 +26,6 @@ namespace _10NumberAdd
             // Forループを使ったバージョン
             TextResult.Text = GetAddResult_byForLoop(TextSource.Text);
         }
-
 
         /// <summary>
         /// 指定された文字列をカンマ区切りの数値とみなして、足し算した式と結果の文字列を返す。
@@ -61,13 +59,12 @@ namespace _10NumberAdd
             return result;
         }
 
-
         /// <summary>
         /// 指定された文字列をカンマ区切りの数値とみなして、足し算した式と結果の文字列を返す。
         /// （Forで作るパターン）
         /// </summary>
-        /// <param name="source"></param>
-        /// <returns></returns>
+        /// <param name="source">処理対象文字列。</param>
+        /// <returns>処理結果文字列。</returns>
         private string GetAddResult_byForLoop(string source)
         {
             int sum = 0;
@@ -99,8 +96,6 @@ namespace _10NumberAdd
                 result += " = " + sum.ToString();
             }
             return result;
-            
         }
-
     }
 }
