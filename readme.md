@@ -55,6 +55,8 @@ int[,] kuku = new int[9,9];
 string mojiretsu = "1行目と二行目の間に" + "\r\n" + "改行を入れます。";
 ```
 
+上記の変数「mojiretsu」がメッセージボックスなどでどのように表示されるかを試して、実際の動きとプログラム内での記載がどのように対応するかを確認してみてください。
+
 #### 補足情報: テキストボックスを複数行表示可能にする
 九九の結果を表示する際にテキストボックスを用いる場合、テキストボックスで2行以上の表示ができるよう設定する必要があります。この設定はMultiLineプロパティにTrueを設定します。
 
@@ -88,10 +90,10 @@ TextBox.MultiLine = True;
 - 計算処理と結果の表示は課題1と同様とする。
 
 #### 補足情報: カンマ区切りの文字をカンマごとに区切って配列に入れる
-この処理は .NET Frameworkにあらかじめ用意されています。下記のように「Split（スプリット）」という命令で、カンマ区切り文字列をカンマごとに配列に入れられます。
+この処理は .NET Frameworkにあらかじめ用意されています。下記のように「Split（スプリット）」という命令で、カンマ区切り文字列をカンマごとに配列に入れられます。フォームに適当なテキストボックスを貼り付け（下記の例ではText1）、そこにカンマ区切りの数列を入力した状態で下記の処理を動かしてみて、左辺のnumbers変数にどのような情報が入るかを確認してみてください。
 
 ```cs
-string[] numbers = TextBox.Text.Split(',');
+string[] numbers = TextBox1.Text.Split(',');
 ```
 
 ### 講師用補足
@@ -114,9 +116,9 @@ string[] numbers = TextBox.Text.Split(',');
 ```cs
 // 配列のサイズを取得する（表示する際には可変サイズの配列から実際のサイズを知る必要があるので）
 int[,]=new int[5,4]
-totalLength = hairetsu.Length // 20が入ります（5 x 4）
-length_1 = hairetsu.GetLength(0)  // 1つ目の次元のサイズ、5が入ります
-length_2 = hairetsu.GetLength(1)  // 2つ目の次元のサイズ、4が入ります
+int totalLength = hairetsu.Length // 20が入ります（5 x 4）
+int length_1 = hairetsu.GetLength(0)  // 1つ目の次元のサイズ、5が入ります
+int length_2 = hairetsu.GetLength(1)  // 2つ目の次元のサイズ、4が入ります
 ```
 
 ### 講師用補足
