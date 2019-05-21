@@ -5,6 +5,9 @@ namespace _10NumberAdd
 {
     public partial class AddNumbersForm : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AddNumbersForm"/> class.
+        /// </summary>
         public AddNumbersForm()
         {
             InitializeComponent();
