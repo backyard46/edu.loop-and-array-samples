@@ -60,17 +60,17 @@ namespace CS_LoopAndArraySample
         /// あとで出てきますが、同じ名称で引数違いの関数を宣言することを、
         /// オーバーロード（overload）と呼びます。
         /// </remarks>
-        /// <param name="dimension"></param>
+        /// <param name="matrixSize"></param>
         /// <returns></returns>
-        private int[,] GetKukuMatrix(int dimension)
+        private int[,] GetKukuMatrix(int matrixSize)
         {
-            int[,] result = new int[dimension, dimension];
+            int[,] result = new int[matrixSize, matrixSize];
 
             // 外側のループでは「iの段」を表現
-            for (int i = 0; i < dimension; i++)
+            for (int i = 0; i < matrixSize; i++)
             {
                 // 内側のループでは「iの段」の1～9を表現
-                for (int j = 0; j < dimension; j++)
+                for (int j = 0; j < matrixSize; j++)
                 {
                     // 掛け算した結果を「i行」の「j列」に設定する
                     result[i, j] = (j + 1) * (i + 1);
