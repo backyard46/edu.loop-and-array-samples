@@ -42,6 +42,10 @@
             this.ButtonAdd = new System.Windows.Forms.Button();
             this.ResultLabel = new System.Windows.Forms.Label();
             this.TextResult = new System.Windows.Forms.TextBox();
+            this.ButtonAdd2 = new System.Windows.Forms.Button();
+            this.ButtonAdd3 = new System.Windows.Forms.Button();
+            this.ButtonAdd4 = new System.Windows.Forms.Button();
+            this.ButtonAdd5 = new System.Windows.Forms.Button();
             this.TextBoxPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -135,18 +139,18 @@
             // 
             // ButtonAdd
             // 
-            this.ButtonAdd.Location = new System.Drawing.Point(287, 89);
+            this.ButtonAdd.Location = new System.Drawing.Point(12, 89);
             this.ButtonAdd.Name = "ButtonAdd";
             this.ButtonAdd.Size = new System.Drawing.Size(120, 32);
             this.ButtonAdd.TabIndex = 1;
-            this.ButtonAdd.Text = "足し算";
+            this.ButtonAdd.Text = "足し算1";
             this.ButtonAdd.UseVisualStyleBackColor = true;
             this.ButtonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
             // ResultLabel
             // 
             this.ResultLabel.AutoSize = true;
-            this.ResultLabel.Location = new System.Drawing.Point(8, 110);
+            this.ResultLabel.Location = new System.Drawing.Point(8, 170);
             this.ResultLabel.Name = "ResultLabel";
             this.ResultLabel.Size = new System.Drawing.Size(39, 19);
             this.ResultLabel.TabIndex = 5;
@@ -154,16 +158,60 @@
             // 
             // TextResult
             // 
-            this.TextResult.Location = new System.Drawing.Point(12, 132);
+            this.TextResult.Location = new System.Drawing.Point(12, 192);
             this.TextResult.Name = "TextResult";
             this.TextResult.Size = new System.Drawing.Size(395, 27);
             this.TextResult.TabIndex = 4;
+            // 
+            // ButtonAdd2
+            // 
+            this.ButtonAdd2.Location = new System.Drawing.Point(138, 89);
+            this.ButtonAdd2.Name = "ButtonAdd2";
+            this.ButtonAdd2.Size = new System.Drawing.Size(120, 32);
+            this.ButtonAdd2.TabIndex = 6;
+            this.ButtonAdd2.Text = "足し算2";
+            this.ButtonAdd2.UseVisualStyleBackColor = true;
+            this.ButtonAdd2.Click += new System.EventHandler(this.ButtonAdd2_Click);
+            // 
+            // ButtonAdd3
+            // 
+            this.ButtonAdd3.Location = new System.Drawing.Point(264, 89);
+            this.ButtonAdd3.Name = "ButtonAdd3";
+            this.ButtonAdd3.Size = new System.Drawing.Size(120, 32);
+            this.ButtonAdd3.TabIndex = 7;
+            this.ButtonAdd3.Text = "足し算3";
+            this.ButtonAdd3.UseVisualStyleBackColor = true;
+            this.ButtonAdd3.Click += new System.EventHandler(this.ButtonAdd3_Click);
+            // 
+            // ButtonAdd4
+            // 
+            this.ButtonAdd4.Location = new System.Drawing.Point(390, 89);
+            this.ButtonAdd4.Name = "ButtonAdd4";
+            this.ButtonAdd4.Size = new System.Drawing.Size(120, 32);
+            this.ButtonAdd4.TabIndex = 8;
+            this.ButtonAdd4.Text = "足し算4";
+            this.ButtonAdd4.UseVisualStyleBackColor = true;
+            this.ButtonAdd4.Click += new System.EventHandler(this.ButtonAdd4_Click);
+            // 
+            // ButtonAdd5
+            // 
+            this.ButtonAdd5.Location = new System.Drawing.Point(12, 127);
+            this.ButtonAdd5.Name = "ButtonAdd5";
+            this.ButtonAdd5.Size = new System.Drawing.Size(120, 32);
+            this.ButtonAdd5.TabIndex = 9;
+            this.ButtonAdd5.Text = "足し算5";
+            this.ButtonAdd5.UseVisualStyleBackColor = true;
+            this.ButtonAdd5.Click += new System.EventHandler(this.ButtonAdd5_Click);
             // 
             // AddTextBoxNumbersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(415, 171);
+            this.ClientSize = new System.Drawing.Size(584, 231);
+            this.Controls.Add(this.ButtonAdd5);
+            this.Controls.Add(this.ButtonAdd4);
+            this.Controls.Add(this.ButtonAdd3);
+            this.Controls.Add(this.ButtonAdd2);
             this.Controls.Add(this.ResultLabel);
             this.Controls.Add(this.TextResult);
             this.Controls.Add(this.ButtonAdd);
@@ -197,5 +245,9 @@
         private System.Windows.Forms.Button ButtonAdd;
         private System.Windows.Forms.Label ResultLabel;
         private System.Windows.Forms.TextBox TextResult;
+        private System.Windows.Forms.Button ButtonAdd2;
+        private System.Windows.Forms.Button ButtonAdd3;
+        private System.Windows.Forms.Button ButtonAdd4;
+        private System.Windows.Forms.Button ButtonAdd5;
     }
 }
