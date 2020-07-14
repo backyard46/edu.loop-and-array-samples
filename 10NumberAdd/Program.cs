@@ -15,7 +15,7 @@ namespace _10NumberAdd
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddNumbersForm());
+            Application.Run(new Menu());
         }
     }
 }
