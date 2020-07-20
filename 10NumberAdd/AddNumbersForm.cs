@@ -100,5 +100,18 @@ namespace _10NumberAdd
             }
             return result;
         }
+
+        /// <summary>
+        /// フォームが閉じられる際の処理。
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void AddNumbersForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // 自分を隠して、非表示にしてあった親フォームを表示させる
+            // どうせクローズするので自分を隠す必要はありませんが、見た目上ちらつくので
+            this.Hide();
+            this.Owner.Show();
+        }
     }
 }

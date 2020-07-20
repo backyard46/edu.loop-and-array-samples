@@ -77,11 +77,11 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "数値をカンマ区切りで入力してください";
             // 
-            // Form10NumberAdd
+            // AddNumbersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 149);
+            this.ClientSize = new System.Drawing.Size(756, 147);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TextResult);
@@ -90,8 +90,10 @@
             this.Font = new System.Drawing.Font("Meiryo UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form10NumberAdd";
+            this.Name = "AddNumbersForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "10番号の足し算";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddNumbersForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
