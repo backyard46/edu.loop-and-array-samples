@@ -84,7 +84,7 @@ namespace CS_LoopAndArraySample
         /// 二次元の整数配列を渡すと、空白区切りの表形式文字列にして返す。
         /// </summary>
         /// <param name="kukuMatrix">表示したい二次元整数配列。</param>
-        /// <returns>二次元整数配列を、3桁右寄せで表形式に並べた文字列。行末には\r\nで開業を入れてある。</returns>
+        /// <returns>二次元整数配列を、3桁右寄せで表形式に並べた文字列。行末には\r\nで改行を入れてある。</returns>
         private string ShowKukuList(int[,] kukuMatrix)
         {
             // 結果用文字列としてresult変数を用意
