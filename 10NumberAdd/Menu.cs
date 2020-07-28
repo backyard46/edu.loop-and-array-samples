@@ -23,7 +23,7 @@ namespace _10NumberAdd
         /// <param name="e"></param>
         private void kadai1Button_Click(object sender, EventArgs e)
         {
-            AddNumbersForm nextForm = new AddNumbersForm();
+            AddTextBoxNumbersForm nextForm = new AddTextBoxNumbersForm();
             this.Hide();
             nextForm.Show(this);
         }
@@ -35,7 +35,7 @@ namespace _10NumberAdd
         /// <param name="e"></param>
         private void kadai4Button_Click(object sender, EventArgs e)
         {
-            AddTextBoxNumbersForm nextForm = new AddTextBoxNumbersForm();
+            AddNumbersForm nextForm = new AddNumbersForm();
             this.Hide();
             nextForm.Show(this);
         }

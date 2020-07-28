@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.TextBoxPanel = new System.Windows.Forms.Panel();
             this.textSource10 = new System.Windows.Forms.TextBox();
             this.textSource09 = new System.Windows.Forms.TextBox();
@@ -46,6 +47,7 @@
             this.ButtonAdd3 = new System.Windows.Forms.Button();
             this.ButtonAdd4 = new System.Windows.Forms.Button();
             this.ButtonAdd5 = new System.Windows.Forms.Button();
+            this.buttonDescription = new System.Windows.Forms.ToolTip(this.components);
             this.TextBoxPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -144,6 +146,7 @@
             this.ButtonAdd.Size = new System.Drawing.Size(120, 32);
             this.ButtonAdd.TabIndex = 1;
             this.ButtonAdd.Text = "足し算1";
+            this.buttonDescription.SetToolTip(this.ButtonAdd, "情報取得はLINQ、出力はforeachを使うパターン");
             this.ButtonAdd.UseVisualStyleBackColor = true;
             this.ButtonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
@@ -170,6 +173,7 @@
             this.ButtonAdd2.Size = new System.Drawing.Size(120, 32);
             this.ButtonAdd2.TabIndex = 6;
             this.ButtonAdd2.Text = "足し算2";
+            this.buttonDescription.SetToolTip(this.ButtonAdd2, "全部LINQで計算するパターン(1)");
             this.ButtonAdd2.UseVisualStyleBackColor = true;
             this.ButtonAdd2.Click += new System.EventHandler(this.ButtonAdd2_Click);
             // 
@@ -180,6 +184,7 @@
             this.ButtonAdd3.Size = new System.Drawing.Size(120, 32);
             this.ButtonAdd3.TabIndex = 7;
             this.ButtonAdd3.Text = "足し算3";
+            this.buttonDescription.SetToolTip(this.ButtonAdd3, "全部LINQで計算するパターン(2)");
             this.ButtonAdd3.UseVisualStyleBackColor = true;
             this.ButtonAdd3.Click += new System.EventHandler(this.ButtonAdd3_Click);
             // 
@@ -190,6 +195,7 @@
             this.ButtonAdd4.Size = new System.Drawing.Size(120, 32);
             this.ButtonAdd4.TabIndex = 8;
             this.ButtonAdd4.Text = "足し算4";
+            this.buttonDescription.SetToolTip(this.ButtonAdd4, "全部LINQで計算するパターン(4)");
             this.ButtonAdd4.UseVisualStyleBackColor = true;
             this.ButtonAdd4.Click += new System.EventHandler(this.ButtonAdd4_Click);
             // 
@@ -200,6 +206,7 @@
             this.ButtonAdd5.Size = new System.Drawing.Size(120, 32);
             this.ButtonAdd5.TabIndex = 9;
             this.ButtonAdd5.Text = "足し算5";
+            this.buttonDescription.SetToolTip(this.ButtonAdd5, "LINQで極力行数を減らしてみたパターン");
             this.ButtonAdd5.UseVisualStyleBackColor = true;
             this.ButtonAdd5.Click += new System.EventHandler(this.ButtonAdd5_Click);
             // 
@@ -249,5 +256,6 @@
         private System.Windows.Forms.Button ButtonAdd3;
         private System.Windows.Forms.Button ButtonAdd4;
         private System.Windows.Forms.Button ButtonAdd5;
+        private System.Windows.Forms.ToolTip buttonDescription;
     }
 }
